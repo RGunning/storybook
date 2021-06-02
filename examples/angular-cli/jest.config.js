@@ -20,9 +20,9 @@ module.exports = {
   },
   moduleFileExtensions: [...config.moduleFileExtensions, 'html'],
   snapshotSerializers: [
-        'jest-preset-angular/build/serializers/no-ng-attributes',
-        'jest-preset-angular/build/serializers/ng-snapshot',
-        'jest-preset-angular/build/serializers/html-comment',
+    'jest-preset-angular/build/serializers/no-ng-attributes',
+    'jest-preset-angular/build/serializers/ng-snapshot',
+    'jest-preset-angular/build/serializers/html-comment',
   ],
   setupFilesAfterEnv: ['./jest-config/setup.ts'],
   testPathIgnorePatterns: ['app.component.spec.ts'],
