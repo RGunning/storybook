@@ -87,9 +87,9 @@
     "@types/autoprefixer": "^9.7.2",
     "@types/jest": "^26.0.16",
     "@webcomponents/custom-elements": "^1.4.3",
-    "jest": "^26.6.3",
-    "jest-preset-angular": "^8.3.2",
-    "ts-jest": "^26.4.4"
+    "jest": "^27.0.3",
+    "jest-preset-angular": "^9.0.1",
+    "ts-jest": "^27.0.2"
   },
   "peerDependencies": {
     "@angular-devkit/architect": ">=0.8.9",

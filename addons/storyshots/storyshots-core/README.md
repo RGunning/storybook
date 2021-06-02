@@ -181,7 +181,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.(ts|html)$': '<rootDir>/node_modules/jest-preset-angular/preprocessor.js',
+    '^.+\\.(ts|html)$': 'jest-preset-angular',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', '.html'],
 };

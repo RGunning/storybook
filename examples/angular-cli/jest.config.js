@@ -9,26 +9,20 @@ module.exports = {
     'ts-jest': {
       tsConfig: path.join(__dirname, 'src/tsconfig.spec.json'),
       stringifyContentPathRegex: '\\.html$',
-      astTransformers: {
-        before: [
-          'jest-preset-angular/build/InlineFilesTransformer',
-          'jest-preset-angular/build/StripStylesTransformer',
-        ],
-      },
     },
   },
   roots: [__dirname],
   transform: {
     '^.+\\.stories\\.[jt]sx?$': '@storybook/addon-storyshots/injectFileName',
-    '^.+\\.(ts|html)$': 'ts-jest',
+    '^.+\\.(ts|html)$': 'jest-preset-angular',
     '^.+\\.jsx?$': path.join(projectDir, 'scripts/utils/jest-transform-js.js'),
     '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
   },
   moduleFileExtensions: [...config.moduleFileExtensions, 'html'],
   snapshotSerializers: [
-    'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
-    'jest-preset-angular/build/AngularSnapshotSerializer.js',
-    'jest-preset-angular/build/HTMLCommentSerializer.js',
+        'jest-preset-angular/build/serializers/no-ng-attributes',
+        'jest-preset-angular/build/serializers/ng-snapshot',
+        'jest-preset-angular/build/serializers/html-comment',
   ],
   setupFilesAfterEnv: ['./jest-config/setup.ts'],
   testPathIgnorePatterns: ['app.component.spec.ts'],

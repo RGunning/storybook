@@ -76,7 +76,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
     "jest-emotion": "^10.0.32",
-    "jest-preset-angular": "^8.3.2",
+    "jest-preset-angular": "^9.0.1",
     "jest-vue-preprocessor": "^1.7.1",
     "rxjs": "^6.6.3",
     "vue-jest": "^5.0.0-alpha.8"
@@ -88,7 +88,7 @@
     "@storybook/react": "*",
     "@storybook/vue": "*",
     "@storybook/vue3": "*",
-    "jest-preset-angular": "*",
+    "jest-preset-angular": "^9.0.0",
     "jest-vue-preprocessor": "*",
     "preact": "^10.5.13",
     "react": "^16.8.0 || ^17.0.0",

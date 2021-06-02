@@ -13,15 +13,11 @@ function setupAngularJestPreset() {
   // jest.requireActual('core-js/es7/reflect');
 
   // Angular + Jest + Storyshots = Crazy Shit:
-  // We need to require 'jest-preset-angular/build/setupJest' before any storybook code
-  // is running inside jest -  one of the things that `jest-preset-angular/build/setupJest` does is
+  // We need to require 'jest-preset-angular/setup-jest' before any storybook code
+  // is running inside jest -  one of the things that `jest-preset-angular/setup-jest` does is
   // extending the `window.Reflect` with all the needed metadata functions, that are required
   // for emission of the TS decorations like 'design:paramtypes'
-  try {
-    jest.requireActual('jest-preset-angular/build/setupJest');
-  } catch (e) {
-    jest.requireActual('jest-preset-angular/build/setup-jest');
-  }
+  jest.requireActual('jest-preset-angular/setup-jest');
 }
 
 function test(options: StoryshotsOptions): boolean {

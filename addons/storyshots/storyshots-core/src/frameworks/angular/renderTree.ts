@@ -1,5 +1,5 @@
-import AngularSnapshotSerializer from 'jest-preset-angular/build/AngularSnapshotSerializer';
-import HTMLCommentSerializer from 'jest-preset-angular/build/HTMLCommentSerializer';
+import AngularSnapshotSerializer from 'jest-preset-angular/build/serializers/ng-snapshot';
+import HTMLCommentSerializer from 'jest-preset-angular/build/serializers/html-comment';
 import { TestBed } from '@angular/core/testing';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { addSerializer } from 'jest-specific-snapshot';

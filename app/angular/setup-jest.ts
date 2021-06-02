@@ -1,2 +1,2 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import 'jest-preset-angular';
+import 'jest-preset-angular/setup-jest';
